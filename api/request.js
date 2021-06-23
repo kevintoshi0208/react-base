@@ -1,7 +1,6 @@
 import {apiUrl} from '../config/config';
 import 'redux';
 import {userLogout} from '../redux/actions/actions';
-import {refreshTime} from "../components/Layout/Timer";
 import 'core-js/features/url-search-params';
 
 if (typeof window !=="undefined"){

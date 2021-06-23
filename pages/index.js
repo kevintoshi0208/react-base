@@ -1,8 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { useDispatch, useSelector } from "react-redux";
+import {setUser} from "../redux/actions/actions";
 
-export default function Home() {
+export default function Home(props) {
+  const auth = useSelector(state => ({
+    ...state.auth
+  }));
+  const dispatch = useDispatch();
+  console.log(auth)
   return (
     <div className={styles.container}>
       <Head>
@@ -20,6 +27,10 @@ export default function Home() {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
+
+        <button onClick={() => dispatch(setUser({ name : "kevinhuang" }))}>
+          test redux
+        </button>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
