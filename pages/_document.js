@@ -24,11 +24,6 @@ class MyDocument extends Document {
                         rel="stylesheet"
                         href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css"
                     />
-                    <link
-                        rel="stylesheet"
-                        type="text/css"
-                        href="/css/fontawesome.css"
-                    />
                     <title>Next js</title>
                     <style jsx global>
                         {`
